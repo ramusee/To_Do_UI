@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>To Do list</title>
+</head>
+
+<body>
+  <div class="todo">
+    <section class="section-priority">
+      <span class="section-priority__title">high</span>
+      <form action="" class="add-task">
+        <input type="text" class="input-control" placeholder='Добавить важных дел'>
+        <button class="button button_add" type="button"><img src="/img/close-icon.svg" alt="add" class="img_add"></button>
+      </form>
+      <div class="task">
+        <input class="task__check-input" type="checkbox" checked>
+        <span class="task__checkbox"></span>
+        <p class="task__text">Вот вам и супер интересная тема.
+          Вы наверняка заметили что ваши файлы с кодом становятся все объемнее, что хочется вынести некоторые вещи
+          куда-то за пределы основной программы.</p>
+        <button type="button" class="button button_del"><img src="/img/close-icon.svg" alt="delete" class="img_del"></button>
+      </div>
+    </section>
+    <section class="section-priority">
+      <span class="section-priority__title">low</span>
+      <form action="" class="add-task">
+        <input type="text" class="input-control" placeholder='Добавить'>
+        <button class="button button_add" type="button"><img src="/img/close-icon.svg" alt="add"></button>
+      </form>
+      <div class="task">
+        <input class="task__check-input" type="checkbox" checked>
+        <span class="task__checkbox"></span>
+        <p class="task__text">Посмотреть ютубчик</p>
+        <button type="button" class="button button_del"><img src="/img/close-icon.svg" alt="delete" class="img_del"></button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
