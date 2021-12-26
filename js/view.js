@@ -15,7 +15,7 @@ function addTaskHigh() {
       <input class="task__check-input" type="checkbox">
       <span class="task__checkbox"></span>
       <p class="task__text">${inputValue}</p>
-      <button type="button" class="button button_del"><img src="/images/close-icon.svg" alt="delete" class="img_del"></button>
+      <button type="button" class="button button_del"><img src="images/close-icon.svg" alt="delete" class="img_del"></button>
       </div>`
     )
     const removeBtns = document.querySelectorAll('.button_del')
@@ -36,7 +36,7 @@ function addTaskLow() {
       <input class="task__check-input" type="checkbox">
       <span class="task__checkbox"></span>
       <p class="task__text">${inputValue}</p>
-      <button type="button" class="button button_del"><img src="/images/close-icon.svg" alt="delete" class="img_del"></button>
+      <button type="button" class="button button_del"><img src="images/close-icon.svg" alt="delete" class="img_del"></button>
       </div>`
     )
     const removeBtns = document.querySelectorAll('.button_del')
