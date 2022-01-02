@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <title>To Do list</title>
-</head>
-
-<body>
-  <div class="todo">
-    <section class="priority priority_high">
-      <span class="priority__title">high</span>
-      <form action="" onsubmit="return false" class="todo__add-task" >
-        <input type="text" class="todo__task-value " placeholder='Добавить важные дела'>
-        <button class="button button_add" type="button"><img src="images/close-icon.svg" alt="add"
-            class="img_add"></button>
-      </form>
-      <div class="todo__tasks todo__tasks_high"></div>
-    </section>
-    <section class="priority priority_low">
-      <span class="priority__title">low</span>
-      <form action="" class="todo__add-task" onsubmit="return false">
-        <input type="text" class="todo__task-value " placeholder='Добавить неважные дела'>
-        <button class="button button_add" type="button"><img src="images/close-icon.svg" alt="add"></button>
-      </form>
-      <div class="todo__tasks todo__tasks_low"></div>
-    </section>
-  </div>
-  <script src="js/view.js"></script>
-</body>
-
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo</title>
+  </head>
+  
+  <body>
+    <div class="todo">
+      <section class="priority priority_high">
+        <span class="priority__title">high</span>
+        <form action="" class="todo__add-task" onsubmit="return false">
+          <input type="text" class="todo__task-value" placeholder='Добавить важных дел'>
+          <button class="button button_add" type="button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)" stroke="#998899"/>
+  <line y1="-0.5" x2="18.0401" y2="-0.5" transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899"/>
+  </svg></button>
+        </form>
+        <div class="todo__tasks todo__tasks_high"></div>
+      </section>
+      <section class="priority priority_low">
+        <span class="priority__title">low</span>
+        <form action="" class="todo__add-task" onsubmit="return false">
+          <input type="text" class="todo__task-value" placeholder='Добавить'>
+          <button class="button button_add" type="button"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)" stroke="#998899"/>
+  <line y1="-0.5" x2="18.0401" y2="-0.5" transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899"/>
+  </svg></button>
+        </form>
+        <div class="todo__tasks todo__tasks_low"></div>
+      </section>
+    </div>
+    <script src="js/view.js"></script>
+  </body>
+  
+  </html>
