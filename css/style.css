@@ -7,7 +7,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   max-width: 600px;
   min-width: 300px;
@@ -29,10 +30,10 @@ body {
   align-items: center;
   flex-grow: 1;
   width: 100%;
-  border: 1px solid #444444;
+  border: 1px solid #BBBBBB;
   border-radius: 6px;
   margin: 0.7em 0;
-  padding: .6em;
+  padding: .4em;
   box-sizing: border-box;
 }
 .todo__tasks {
@@ -44,11 +45,11 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   box-sizing: border-box;
-  border: 1px solid #444;
+  border: 1px solid #BBBBBB;
   border-radius: 6px;
   width: 100%;
-  padding: .6em;
-  margin-bottom: 0.7em;
+  padding: .8em 0.4em;
+  margin-bottom: 0.8em;
 }
 .task__text {
   margin: 0;
@@ -62,6 +63,7 @@ body {
   outline: none;
   font-size: 1em;
   overflow: hidden;
+  padding: 0.4em 0;
 }
 .todo__task-value::placeholder {
   color: #BBBBBB;
@@ -74,16 +76,20 @@ body {
   border: none;
   cursor: pointer;
   margin: 0;
+  margin-right: 5px;
   padding: 0;
+  outline: none;
 }
 .button_add:hover {
   opacity: 0.5;
+}
+.button_del{
+  transform: rotate(45deg);
 }
 .button_del:hover {
   opacity: 0.5;
 }
 .img_del {
-  transform: rotate(45deg);
   margin: 0;
   width: 1.2em;
 }
@@ -96,7 +102,7 @@ body {
   min-width: 1em;
   height: 1em;
   z-index: 2;
-  
+  outline: none;
 }
 .task__checkbox {
   position: absolute;
