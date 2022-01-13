@@ -4,5 +4,6 @@ export const UI_ELEMENTS = {
   SECTION_LOW: document.querySelector('.priority_low'),
   TASKS_HIGH: document.querySelector('.todo__tasks_high'),
   TASKS_LOW: document.querySelector('.todo__tasks_low'),
-  FORM: document.querySelectorAll('.todo__add-task'),
+  FORM_HIGH: document.querySelector('.todo__add-task.high'),
+  FORM_LOW: document.querySelector('.todo__add-task.low'),
 }

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>To Do list</title>
 </head>
@@ -15,18 +15,17 @@
   <div class="todo">
     <section class="priority priority_high">
       <span class="priority__title">high</span>
-      <form onsubmit="return false" class="todo__add-task" >
-        <input type="text" class="todo__task-value " placeholder='Добавить важные дела'>
-        <button class="button button_add" type="button"><img src="images/close-icon.svg" alt="add"
-            class="img_add"></button>
+      <form onsubmit="return false" class="todo__add-task high">
+        <input type="text" class="todo__task-value" placeholder="Add task">
+        <input class="button button_add" type="submit" value="">
       </form>
       <div class="todo__tasks todo__tasks_high"></div>
     </section>
     <section class="priority priority_low">
       <span class="priority__title">low</span>
-      <form onsubmit="return false" class="todo__add-task" >
-        <input type="text" class="todo__task-value " placeholder='Добавить неважные дела'>
-        <button class="button button_add" type="button"><img src="images/close-icon.svg" alt="add"></button>
+      <form onsubmit="return false" class="todo__add-task low">
+        <input type="text" class="todo__task-value" placeholder="Add task">
+        <input class="button button_add" type="submit" value="">
       </form>
       <div class="todo__tasks todo__tasks_low"></div>
     </section>

@@ -13,18 +13,20 @@ function addTaskHigh() {
       `<div class="todo__task">
       <input class="task__check-input" type="checkbox">
       <span class="task__checkbox"></span>
-      <p class="task__text">${INPUT_VALUE}</p>
+      <p class="task__text"></p>
       <button type="button" class="button button_del"><img src="images/close-icon.svg" alt="delete" class="img_del"></button>
       </div>`
     )
   }
+  const tasks = document.querySelectorAll('.task__text')
+  tasks.forEach((task) => {
+    if (task.textContent === '') task.textContent = INPUT_VALUE
+  })
   const BTNS_REMOVE = document.querySelectorAll('.button_del')
-  for (let btn of BTNS_REMOVE) {
-    btn.addEventListener('click', deleteTask)
-  }
+  BTNS_REMOVE.forEach((btn) => btn.addEventListener('click', deleteTask))
   const CHECK_INPUTS = document.querySelectorAll('.task__check-input')
   CHECK_INPUTS.forEach((item) => item.addEventListener('click', changeStatus))
-  resetForm()
+  UI_ELEMENTS.FORM_HIGH.reset()
 }
 function addTaskLow() {
   const INPUT_VALUE = UI_ELEMENTS.SECTION_LOW.children[1][0].value
@@ -34,29 +36,25 @@ function addTaskLow() {
       `<div class="todo__task">
       <input class="task__check-input" type="checkbox">
       <span class="task__checkbox"></span>
-      <p class="task__text">${INPUT_VALUE}</p>
+      <p class="task__text"></p>
       <button type="button" class="button button_del"><img src="images/close-icon.svg" alt="delete" class="img_del"></button>
       </div>`
     )
   }
+  const tasks = document.querySelectorAll('.task__text')
+  tasks.forEach((task) => {
+    if (task.textContent === '') task.textContent = INPUT_VALUE
+  })
   const BTNS_REMOVE = document.querySelectorAll('.button_del')
-  for (let btn of BTNS_REMOVE) {
-    btn.addEventListener('click', deleteTask)
-  }
+  BTNS_REMOVE.forEach((btn) => btn.addEventListener('click', deleteTask))
   const CHECK_INPUTS = document.querySelectorAll('.task__check-input')
   CHECK_INPUTS.forEach((item) => item.addEventListener('click', changeStatus))
-  resetForm()
+  UI_ELEMENTS.FORM_LOW.reset()
 }
-
 function changeStatus() {
   this.parentElement.children[0].checked === true
     ? (this.parentElement.style.backgroundColor = '#f4f4f4')
     : (this.parentElement.style.backgroundColor = '#fff')
-}
-function resetForm() {
-  for (let form of UI_ELEMENTS.FORM) {
-    form.reset()
-  }
 }
 function deleteTask() {
   this.parentElement.remove()
