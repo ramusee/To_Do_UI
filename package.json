@@ -1,0 +1,25 @@
+{
+  "name": "todoui",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramusee/To_Do-list-UI.git"
+  },
+  "author": "Ramil Yusupov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramusee/To_Do-list-UI/issues"
+  },
+  "homepage": "https://github.com/ramusee/To_Do-list-UI#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
+}

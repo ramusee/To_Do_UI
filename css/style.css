@@ -75,10 +75,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: inherit;
   background-image: url(../images/close-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: inherit;
   border: none;
   cursor: pointer;
   margin: 0 .5em;
@@ -87,17 +87,21 @@ body {
 .button_add:hover {
   opacity: 0.5;
 }
+.task__container{
+  display: flex;
+  align-items: center;
+}
+.task__date {
+  font-size: .8em;
+  margin: 0 .5em;
+}
 .button_del{
   transform: rotate(45deg);
-  margin: 0 0.1em;
-  padding: 0;
+  padding: 11px;
+  margin: 0;
 }
 .button_del:hover {
   opacity: 0.5;
-}
-.img_del {
-  margin: 0;
-  width: 1.2em;
 }
 .task__check-input {
   position: absolute;
@@ -112,7 +116,7 @@ body {
 }
 .task__checkbox {
   position: absolute;
-  background-image: url(../images/Ellipse\ 2.svg);
+  background-image: url(../images/Ellipse2.svg);
   background-repeat: no-repeat;
   min-width: 1.2em;
   height: 1.2em;
@@ -120,5 +124,5 @@ body {
   margin: 0 0.2em;
 }
 .task__check-input:checked + .task__checkbox {
-  background-image: url(../images/Group\ 7.svg);
+  background-image: url(../images/Group7.svg);
 }
